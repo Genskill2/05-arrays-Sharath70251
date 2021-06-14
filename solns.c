@@ -75,17 +75,20 @@ int mode(int x[], int n)
     int prime[n];
     for (int i=2;i<n:i++)
     {
-      if (i%j==0)
-      {
-        count++;
-      }
-    
-      if(count==1)
+      int count=0;
+      for (int j=2;j<=i;j++)
+        {
+          if (i%j==0)
+            {
+            count++;
+            }
+         }
+     if(count==1)
       {
       prime[m]=i;
       m++;
       }
-    }
+    }  
   while(n>1)
     {
     if(n%prime[z]==0)
