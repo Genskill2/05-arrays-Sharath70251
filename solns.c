@@ -82,7 +82,7 @@ int mode(int x[], int n)
     
       if(count==1)
       {
-      prime[m]=i
+      prime[m]=i;
       m++;
       }
     }
