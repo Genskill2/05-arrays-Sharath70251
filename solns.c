@@ -67,6 +67,7 @@ int mode(int x[], int n)
       break;
     }
   }
+} 
  
   int factors(int n,int x[])
   {
@@ -78,31 +79,29 @@ int mode(int x[], int n)
       {
         count++;
       }
-    }
-    if(count==1)
-    {
+    
+      if(count==1)
+      {
       prime[m]=i
       m++;
+      }
     }
-  }
-while(n>1)
-{
-  if(n%prime[z]==0)
-  {
-  n=n/prime[z];
-  x[index]=prime[z];
-    index++;
-  }
-  else
-  {
-    z++;
-  }
-}
-}
+  while(n>1)
+    {
+    if(n%prime[z]==0)
+      {
+         n=n/prime[z];
+         x[index]=prime[z];
+         index++;
+      }
+    else
+      {
+         z++;
+      }
+    }
 return index;
-}
   }
-
+ 
 
     
   
